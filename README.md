@@ -84,4 +84,4 @@ The script generates a CSV audit report for every migration.
 
 __Disclaimer__
 
-__This tool is provided "as is" without warranty of any kind. Always test in a non-production environment before running against production mailboxes. The author assumes no responsibility for data loss, mailbox corruption, or service interruptions resulting from the use of this script.__
+___This tool is provided "as is" without warranty of any kind. Always test in a non-production environment before running against production mailboxes. The author assumes no responsibility for data loss, mailbox corruption, or service interruptions resulting from the use of this script.___
