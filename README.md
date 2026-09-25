@@ -54,19 +54,19 @@ __The application must have:__
 
 __EWS Managed API__
 
-The script requires: "Microsoft.Exchange.WebServices.dll"
+The script requires: _"Microsoft.Exchange.WebServices.dll"_
 
-Default path: "C:\Program Files\PackageManagement\NuGet\Packages\Exchange.WebServices.Managed.Api.2.2.1.2\lib\net35\Microsoft.Exchange.WebServices.dll"
+Default path: _"C:\Program Files\PackageManagement\NuGet\Packages\Exchange.WebServices.Managed.Api.2.2.1.2\lib\net35\Microsoft.Exchange.WebServices.dll"_
 
 __Usage__
 
-$Secret = ConvertTo-SecureString "ClientSecret" -AsPlainText -Force
+_$Secret = ConvertTo-SecureString "ClientSecret" -AsPlainText -Force_
 
-.\Invoke-Unarchive.ps1 -Mailbox user@contoso.com -TenantId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -ClientId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -ClientSecret $Secret
+_.\Invoke-Unarchive.ps1 -Mailbox user@contoso.com -TenantId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -ClientId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -ClientSecret $Secret_
 
 __Logging__
 
-Execution logs are automatically written to: ".\Logs\"
+Execution logs are automatically written to: _".\Logs\"_
 
 __Log entries include:__
 
@@ -84,4 +84,4 @@ The script generates a CSV audit report for every migration.
 
 __Disclaimer__
 
-This tool is provided "as is" without warranty of any kind. Always test in a non-production environment before running against production mailboxes. The author assumes no responsibility for data loss, mailbox corruption, or service interruptions resulting from the use of this script.
+__This tool is provided "as is" without warranty of any kind. Always test in a non-production environment before running against production mailboxes. The author assumes no responsibility for data loss, mailbox corruption, or service interruptions resulting from the use of this script.__
