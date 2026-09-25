@@ -64,6 +64,24 @@ $Secret = ConvertTo-SecureString "ClientSecret" -AsPlainText -Force
 
 .\Invoke-Unarchive.ps1 -Mailbox user@contoso.com -TenantId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -ClientId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -ClientSecret $Secret
 
+Logging
+
+Execution logs are automatically written to: ".\Logs\"
+
+Log entries include:
+
+- Authentication status
+- Folder discovery
+- Folder creation
+- Batch migration progress
+- Errors and warnings
+- Migration summary
+
+Audit Reporting
+
+The script generates a CSV audit report for every migration.
+
+
 Disclaimer
 
 This tool is provided "as is" without warranty of any kind. Always test in a non-production environment before running against production mailboxes. The author assumes no responsibility for data loss, mailbox corruption, or service interruptions resulting from the use of this script.
