@@ -51,3 +51,7 @@ Microsoft Entra Application
 The application must have:
   - Exchange.ManageAsApp application permission
   - Admin consent granted
+
+Disclaimer
+
+This tool is provided "as is" without warranty of any kind. Always test in a non-production environment before running against production mailboxes. The author assumes no responsibility for data loss, mailbox corruption, or service interruptions resulting from the use of this script.
