@@ -52,6 +52,18 @@ The application must have:
   - Exchange.ManageAsApp application permission
   - Admin consent granted
 
+EWS Managed API
+
+The script requires: "Microsoft.Exchange.WebServices.dll"
+
+Default path: "C:\Program Files\PackageManagement\NuGet\Packages\Exchange.WebServices.Managed.Api.2.2.1.2\lib\net35\Microsoft.Exchange.WebServices.dll"
+
+Usage
+
+$Secret = ConvertTo-SecureString "ClientSecret" -AsPlainText -Force
+
+.\Invoke-Unarchive.ps1 -Mailbox user@contoso.com -TenantId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -ClientId xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx -ClientSecret $Secret
+
 Disclaimer
 
 This tool is provided "as is" without warranty of any kind. Always test in a non-production environment before running against production mailboxes. The author assumes no responsibility for data loss, mailbox corruption, or service interruptions resulting from the use of this script.
